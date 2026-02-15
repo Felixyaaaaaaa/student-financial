@@ -1,0 +1,6 @@
+# project-keuangan/.htaccess
+RewriteEngine On
+
+# Jika folder public ada, arahkan semua request ke public/
+RewriteCond %{REQUEST_URI} !^/project-keuangan/public/
+RewriteRule ^(.*)$ public/$1 [L]
